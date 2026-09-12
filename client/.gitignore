@@ -1,0 +1,69 @@
+# Build directories
+build/
+out/
+Debug/
+Release/
+x64/
+x86/
+MinSizeRel/
+RelWithDebInfo/
+
+# Visual Studio
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.vcxproj.filters
+
+# Visual Studio Code
+.vscode/
+
+# Compiled Object files
+*.obj
+*.o
+*.lo
+*.la
+*.al
+.libs/
+
+# Compiled Dynamic libraries
+*.dll
+*.so
+*.so.*
+*.dylib
+
+# Compiled Static libraries
+*.lib
+*.a
+*.lai
+
+# Executables
+*.exe
+*.out
+*.app
+
+# CMake
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+Makefile
+generate.stamp*
+
+# PDB and debug files
+*.pdb
+*.ilk
+*.exp
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Dependency directories
+ipch/
+
+# Boost (if built from source in project)
+boost_*/stage/
+
+# Logs
+*.log

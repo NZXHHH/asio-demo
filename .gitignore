@@ -1,0 +1,88 @@
+# ============================================================
+# 白名单策略：只追踪 .h 和 .cpp 文件，其余全部忽略
+# ============================================================
+
+# 忽略所有文件
+*
+
+# 放行目录（使 Git 能递归进入子目录查找源文件）
+!*/
+
+# 放行 C/C++ 源文件
+!*.h
+!*.cpp
+!*.hpp
+!*.hxx
+!*.cxx
+
+# 放行本文件
+!.gitignore
+
+# ============================================================
+# 排除编译产物与 IDE 生成文件（避免误追踪 build 目录下的生成文件）
+# ============================================================
+
+# 构建目录
+build/
+out/
+Debug/
+Release/
+MinSizeRel/
+RelWithDebInfo/
+x64/
+x86/
+bin/
+obj/
+
+# Visual Studio
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln
+*.sln.docstates
+*.vcxproj
+*.vcxproj.filters
+*.vcxproj.user
+*.ipch
+*.sdf
+*.opensdf
+*.db
+
+# Visual Studio Code
+.vscode/
+*.code-workspace
+
+# CMake
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+Makefile
+*.cmake
+CMakePresets.json
+
+# 编译产物
+*.obj
+*.o
+*.lo
+*.la
+*.al
+.libs/
+*.dll
+*.so
+*.so.*
+*.dylib
+*.lib
+*.a
+*.lai
+*.exe
+*.out
+*.app
+*.pdb
+*.ilk
+*.exp
+*.gch
+*.pch
+
+# 日志
+*.log
