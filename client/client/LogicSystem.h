@@ -4,7 +4,6 @@
 #include"Singleton.h"
 #include <json/json.h>
 #include <json/value.h>
-#include <json/reader.h>
 #define SHOW 1001
 class LogicNode
 {

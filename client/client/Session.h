@@ -10,6 +10,8 @@ using  boost::asio::ip::tcp;
 #include<map>
 #include"MsgNode.h"
 #include"const.h"
+using boost::asio::strand;
+using boost::asio::io_context;
 class CServer;
 class CSession:public enable_shared_from_this<CSession>
 {
@@ -32,4 +34,5 @@ private:
 	std::string _uuid;
 	shared_ptr<MsgNode>_head_node;
 	shared_ptr<RecvNode>_recv_msg_node;
+	strand<io_context::executor_type> _strand;
 };

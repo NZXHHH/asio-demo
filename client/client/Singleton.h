@@ -7,7 +7,7 @@ template <typename T>
 class Singleton
 {
 	friend class LogicSystem;
-	friend class AsioIOServicePool;
+	friend class AsioIOThreadPool;
 private:
 	Singleton() = default;
 	Singleton<T>& operator=(const Singleton<T>& s) = delete;

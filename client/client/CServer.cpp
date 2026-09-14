@@ -4,7 +4,7 @@
 #include"MsgNode.h"
 void CServer::start_accept()
 {
-	shared_ptr<CSession> session = make_shared<CSession>(AsioIOServicePool::GetInstance()->get_io_service(), this);
+	shared_ptr<CSession> session = make_shared<CSession>(AsioIOThreadPool::GetInstance()->get_io_service(), this);
 	acceptor.async_accept(session->Socket(), bind(&CServer::handle_accept, this, session, placeholders::_1));
 }
 
